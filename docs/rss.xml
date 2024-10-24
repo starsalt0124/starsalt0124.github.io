@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Starsalt's Blog</title><link>https://starsalt0124.github.io</link><description>stay hungry, stay foolish</description><copyright>Starsalt's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/125791539?s=400&amp;u=8ee725c02224f8d28f9711eb4a9a25ebc460d7e6&amp;v=4</url><title>avatar</title><link>https://starsalt0124.github.io</link></image><lastBuildDate>Thu, 24 Oct 2024 09:12:59 +0000</lastBuildDate><managingEditor>Starsalt's Blog</managingEditor><ttl>60</ttl><webMaster>Starsalt's Blog</webMaster><item><title>App动态测试实验</title><link>https://starsalt0124.github.io/post/App-dong-tai-ce-shi-shi-yan.html</link><description># App动态测试实验&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Starsalt's Blog</title><link>https://starsalt0124.github.io</link><description>stay hungry, stay foolish</description><copyright>Starsalt's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/125791539?s=400&amp;u=8ee725c02224f8d28f9711eb4a9a25ebc460d7e6&amp;v=4</url><title>avatar</title><link>https://starsalt0124.github.io</link></image><lastBuildDate>Thu, 24 Oct 2024 10:02:34 +0000</lastBuildDate><managingEditor>Starsalt's Blog</managingEditor><ttl>60</ttl><webMaster>Starsalt's Blog</webMaster><item><title>App动态测试实验</title><link>https://starsalt0124.github.io/post/App-dong-tai-ce-shi-shi-yan.html</link><description># App动态测试实验&#13;
 &#13;
 ## 准备工作&#13;
 &#13;
@@ -15,6 +15,27 @@
 - 模拟器: [genymotion](https://www.genymotion.com/product-desktop/download/)&#13;
 &gt; 选择VirtualBox和genymotion&#13;
 ![image](https://github.com/user-attachments/assets/51f3d735-fa72-4788-bf58-61c80d5a5842)&#13;
+配置虚拟机&#13;
+![image](https://github.com/user-attachments/assets/b1037360-ae7a-4dbc-b696-0713b91724f6)&#13;
+![image](https://github.com/user-attachments/assets/b1d7f7b0-116a-44fd-b15b-a249154e318a)&#13;
+启动虚拟机后，可以在adb中看到该虚拟机&#13;
+![image](https://github.com/user-attachments/assets/737224ea-2fb5-4a3e-8f92-0cbdacd8adb5)&#13;
+- 测试工具: [droidbot](https://github.com/honeynet/droidbot)&#13;
+&gt; 克隆仓库`git clone https://github.com/honeynet/droidbot.git`&#13;
+打开`setup.py`，将`androguard&gt;=3.4.0a1`修改为`androguard==3.4.0a1`&#13;
+在项目文件夹打开终端，输入`pip install -e .`安装droidbot&#13;
+![image](https://github.com/user-attachments/assets/95fe5dde-48a8-4d49-8404-22937396ae44)&#13;
+安装完成后，输入`droidbot -h`&#13;
+![image](https://github.com/user-attachments/assets/3fdaaa85-7d08-46d9-9b07-f6246daf321f)&#13;
+&#13;
+## 开始测试&#13;
+输入指令`droidbot -a &lt;path_to_apk&gt; -o output_dir`开始测试&#13;
+![image](https://github.com/user-attachments/assets/5fbad47f-2428-4d66-8aef-e83f53e396cc)&#13;
+在测试一段时间后，打开输出文件夹中的报告&#13;
+![image](https://github.com/user-attachments/assets/98031987-ba71-4914-9c31-92e624e03916)&#13;
+点击节点或边可以看到相应的信息&#13;
+![image](https://github.com/user-attachments/assets/576ebd39-69d4-4a5f-9d14-bf88d49ec34f)&#13;
+&#13;
 。</description><guid isPermaLink="true">https://starsalt0124.github.io/post/App-dong-tai-ce-shi-shi-yan.html</guid><pubDate>Thu, 24 Oct 2024 09:12:33 +0000</pubDate></item><item><title>test</title><link>https://starsalt0124.github.io/post/test.html</link><description># hello world&#13;
 ## 1&#13;
 ### 2&#13;
