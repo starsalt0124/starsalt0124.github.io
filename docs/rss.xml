@@ -1,5 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Starsalt's Blog</title><link>https://starsalt0124.github.io</link><description>stay hungry, stay foolish</description><copyright>Starsalt's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/125791539?s=400&amp;u=8ee725c02224f8d28f9711eb4a9a25ebc460d7e6&amp;v=4</url><title>avatar</title><link>https://starsalt0124.github.io</link></image><lastBuildDate>Thu, 24 Oct 2024 07:43:25 +0000</lastBuildDate><managingEditor>Starsalt's Blog</managingEditor><ttl>60</ttl><webMaster>Starsalt's Blog</webMaster><item><title>test</title><link>https://starsalt0124.github.io/post/test.html</link><description># hello world&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Starsalt's Blog</title><link>https://starsalt0124.github.io</link><description>stay hungry, stay foolish</description><copyright>Starsalt's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/125791539?s=400&amp;u=8ee725c02224f8d28f9711eb4a9a25ebc460d7e6&amp;v=4</url><title>avatar</title><link>https://starsalt0124.github.io</link></image><lastBuildDate>Thu, 24 Oct 2024 09:12:59 +0000</lastBuildDate><managingEditor>Starsalt's Blog</managingEditor><ttl>60</ttl><webMaster>Starsalt's Blog</webMaster><item><title>App动态测试实验</title><link>https://starsalt0124.github.io/post/App-dong-tai-ce-shi-shi-yan.html</link><description># App动态测试实验&#13;
+&#13;
+## 准备工作&#13;
+&#13;
+- python: [anaconda](https://blog.csdn.net/tqlisno1/article/details/108908775) &#13;
+- java: [JDK](https://www.oracle.com/java/technologies/downloads/#jdk23-windows)&#13;
+&gt; 最新版的JDK安装程序会自动配置环境变量&#13;
+- Android SDK: [Android Studio](https://developer.android.google.cn/studio?hl=zh-cn)&#13;
+&gt; Android Studio在进行安装时需要连接外网&#13;
+在安装完成后将platform-tools路径添加到系统环境变量&#13;
+![Snipaste_2024-10-24_16-57-25](https://github.com/user-attachments/assets/94b09b19-cc36-4595-b44c-f70f3500086b)&#13;
+在命令行中输入adb进行测试&#13;
+![Snipaste_2024-10-24_16-56-00](https://github.com/user-attachments/assets/1f4634dc-c47f-4a4d-9886-46625d8e59f0)&#13;
+- 模拟器: [genymotion](https://www.genymotion.com/product-desktop/download/)&#13;
+&gt; 选择VirtualBox和genymotion&#13;
+![image](https://github.com/user-attachments/assets/51f3d735-fa72-4788-bf58-61c80d5a5842)&#13;
+。</description><guid isPermaLink="true">https://starsalt0124.github.io/post/App-dong-tai-ce-shi-shi-yan.html</guid><pubDate>Thu, 24 Oct 2024 09:12:33 +0000</pubDate></item><item><title>test</title><link>https://starsalt0124.github.io/post/test.html</link><description># hello world&#13;
 ## 1&#13;
 ### 2&#13;
 ```python&#13;
