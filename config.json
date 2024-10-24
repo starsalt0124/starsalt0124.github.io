@@ -1,6 +1,8 @@
 {
     "title":"Starsalt's Blog",
     "subTitle":"stay hungry, stay foolish",
-    "avatarUrl":"https://i0.hdslb.com/bfs/face/94070e09a31945738e7b7eb5ef55605a8e9d5810.jpg",
-    "GMEEK_VERSION":"last"
+    "avatarUrl":"https://avatars.githubusercontent.com/u/125791539?s=400&u=8ee725c02224f8d28f9711eb4a9a25ebc460d7e6&v=4",
+    "GMEEK_VERSION":"last",
+    "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
+    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>"
 }
