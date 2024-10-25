@@ -23,7 +23,7 @@
 编写测试代码
 
 > [!CAUTION]
-> 编译时使用的javac版本应该与soot项目保存一致
+> 编译时使用的javac版本应该与soot项目保持一致
 
 ![image](https://github.com/user-attachments/assets/6bf2009b-5a0c-47ac-81f7-6b4ce23c1fef)
 

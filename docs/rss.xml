@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Starsalt's Blog</title><link>https://starsalt0124.github.io</link><description>stay hungry, stay foolish</description><copyright>Starsalt's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/125791539?s=400&amp;u=8ee725c02224f8d28f9711eb4a9a25ebc460d7e6&amp;v=4</url><title>avatar</title><link>https://starsalt0124.github.io</link></image><lastBuildDate>Fri, 25 Oct 2024 12:59:24 +0000</lastBuildDate><managingEditor>Starsalt's Blog</managingEditor><ttl>60</ttl><webMaster>Starsalt's Blog</webMaster><item><title>App静态分析实验</title><link>https://starsalt0124.github.io/post/App-jing-tai-fen-xi-shi-yan.html</link><description># App静态分析实验&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Starsalt's Blog</title><link>https://starsalt0124.github.io</link><description>stay hungry, stay foolish</description><copyright>Starsalt's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/125791539?s=400&amp;u=8ee725c02224f8d28f9711eb4a9a25ebc460d7e6&amp;v=4</url><title>avatar</title><link>https://starsalt0124.github.io</link></image><lastBuildDate>Fri, 25 Oct 2024 13:03:50 +0000</lastBuildDate><managingEditor>Starsalt's Blog</managingEditor><ttl>60</ttl><webMaster>Starsalt's Blog</webMaster><item><title>App静态分析实验</title><link>https://starsalt0124.github.io/post/App-jing-tai-fen-xi-shi-yan.html</link><description># App静态分析实验&#13;
 &#13;
 ## 创建具有soot依赖的项目&#13;
 创建新项目，选择Maven作为构建系统&#13;
@@ -24,7 +24,7 @@
 编写测试代码&#13;
 &#13;
 &gt; [!CAUTION]&#13;
-&gt; 编译时使用的javac版本应该与soot项目保存一致&#13;
+&gt; 编译时使用的javac版本应该与soot项目保持一致&#13;
 &#13;
 ![image](https://github.com/user-attachments/assets/6bf2009b-5a0c-47ac-81f7-6b4ce23c1fef)&#13;
 &#13;
