@@ -16,15 +16,18 @@
 
 - python: [anaconda](https://blog.csdn.net/tqlisno1/article/details/108908775) 
 - java: [JDK](https://www.oracle.com/java/technologies/downloads/#jdk23-windows)
+> [!TIP]
 > 最新版的JDK安装程序会自动配置环境变量
 - Android SDK: [Android Studio](https://developer.android.google.cn/studio?hl=zh-cn)
+> [!NOTE]
 > Android Studio在进行安装时需要连接外网
+
 在安装完成后将platform-tools路径添加到系统环境变量
-![Snipaste_2024-10-24_16-57-25](https://github.com/user-attachments/assets/94b09b19-cc36-4595-b44c-f70f3500086b)
+![image](https://github.com/user-attachments/assets/a28e9e1b-630b-4219-83a2-27efaa5c8bf4)
 在命令行中输入adb进行测试
 ![Snipaste_2024-10-24_16-56-00](https://github.com/user-attachments/assets/1f4634dc-c47f-4a4d-9886-46625d8e59f0)
 - 模拟器: [genymotion](https://www.genymotion.com/product-desktop/download/)
-> 选择VirtualBox和genymotion
+选择VirtualBox和genymotion
 ![image](https://github.com/user-attachments/assets/51f3d735-fa72-4788-bf58-61c80d5a5842)
 配置虚拟机
 ![image](https://github.com/user-attachments/assets/b1037360-ae7a-4dbc-b696-0713b91724f6)
@@ -32,7 +35,7 @@
 启动虚拟机后，可以在adb中看到该虚拟机
 ![image](https://github.com/user-attachments/assets/737224ea-2fb5-4a3e-8f92-0cbdacd8adb5)
 - 测试工具: [droidbot](https://github.com/honeynet/droidbot)
-> 克隆仓库`git clone https://github.com/honeynet/droidbot.git`
+克隆仓库`git clone https://github.com/honeynet/droidbot.git`
 打开`setup.py`，将`androguard>=3.4.0a1`修改为`androguard==3.4.0a1`
 在项目文件夹打开终端，输入`pip install -e .`安装droidbot
 ![image](https://github.com/user-attachments/assets/95fe5dde-48a8-4d49-8404-22937396ae44)
@@ -41,7 +44,7 @@
 
 ## 开始测试
 输入指令`droidbot -a <path_to_apk> -o output_dir`开始测试
-![image](https://github.com/user-attachments/assets/5fbad47f-2428-4d66-8aef-e83f53e396cc)
+![image](https://github.com/user-attachments/assets/bcfdea3e-35e4-4f31-99fb-4132bcdc5033)
 在测试一段时间后，打开输出文件夹中的报告
 ![image](https://github.com/user-attachments/assets/98031987-ba71-4914-9c31-92e624e03916)
 点击节点或边可以看到相应的信息
@@ -55,15 +58,18 @@
 
 - python: [anaconda](https://blog.csdn.net/tqlisno1/article/details/108908775) 
 - java: [JDK](https://www.oracle.com/java/technologies/downloads/#jdk23-windows)
+> [!TIP]
 > 最新版的JDK安装程序会自动配置环境变量
 - Android SDK: [Android Studio](https://developer.android.google.cn/studio?hl=zh-cn)
+> [!NOTE]
 > Android Studio在进行安装时需要连接外网
+
 在安装完成后将platform-tools路径添加到系统环境变量
-![Snipaste_2024-10-24_16-57-25](https://github.com/user-attachments/assets/94b09b19-cc36-4595-b44c-f70f3500086b)
+![image](https://github.com/user-attachments/assets/a28e9e1b-630b-4219-83a2-27efaa5c8bf4)
 在命令行中输入adb进行测试
 ![Snipaste_2024-10-24_16-56-00](https://github.com/user-attachments/assets/1f4634dc-c47f-4a4d-9886-46625d8e59f0)
 - 模拟器: [genymotion](https://www.genymotion.com/product-desktop/download/)
-> 选择VirtualBox和genymotion
+选择VirtualBox和genymotion
 ![image](https://github.com/user-attachments/assets/51f3d735-fa72-4788-bf58-61c80d5a5842)
 配置虚拟机
 ![image](https://github.com/user-attachments/assets/b1037360-ae7a-4dbc-b696-0713b91724f6)
@@ -71,7 +77,7 @@
 启动虚拟机后，可以在adb中看到该虚拟机
 ![image](https://github.com/user-attachments/assets/737224ea-2fb5-4a3e-8f92-0cbdacd8adb5)
 - 测试工具: [droidbot](https://github.com/honeynet/droidbot)
-> 克隆仓库`git clone https://github.com/honeynet/droidbot.git`
+克隆仓库`git clone https://github.com/honeynet/droidbot.git`
 打开`setup.py`，将`androguard>=3.4.0a1`修改为`androguard==3.4.0a1`
 在项目文件夹打开终端，输入`pip install -e .`安装droidbot
 ![image](https://github.com/user-attachments/assets/95fe5dde-48a8-4d49-8404-22937396ae44)
@@ -80,7 +86,7 @@
 
 ## 开始测试
 输入指令`droidbot -a <path_to_apk> -o output_dir`开始测试
-![image](https://github.com/user-attachments/assets/5fbad47f-2428-4d66-8aef-e83f53e396cc)
+![image](https://github.com/user-attachments/assets/bcfdea3e-35e4-4f31-99fb-4132bcdc5033)
 在测试一段时间后，打开输出文件夹中的报告
 ![image](https://github.com/user-attachments/assets/98031987-ba71-4914-9c31-92e624e03916)
 点击节点或边可以看到相应的信息
@@ -117,7 +123,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 }
 
 </style>
-
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-note {border-left-color:var(--borderColor-accent-emphasis, var(--color-accent-emphasis));background-color:var(--color-accent-subtle);}.markdown-alert.markdown-alert-note .markdown-alert-title {color: var(--fgColor-accent,var(--color-accent-fg));}</style><style>.markdown-alert.markdown-alert-tip {border-left-color:var(--borderColor-success-emphasis, var(--color-success-emphasis));background-color:var(--color-success-subtle);}.markdown-alert.markdown-alert-tip .markdown-alert-title {color: var(--fgColor-success,var(--color-success-fg));}</style>
 
 
 
@@ -153,45 +159,37 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>python: <a href="https://blog.csdn.net/tqlisno1/article/details/108908775" rel="nofollow">anaconda</a></li>
 <li>java: <a href="https://www.oracle.com/java/technologies/downloads/#jdk23-windows" rel="nofollow">JDK</a></li>
 </ul>
-<blockquote>
-<p>最新版的JDK安装程序会自动配置环境变量</p>
-</blockquote>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>最新版的JDK安装程序会自动配置环境变量</p>
+</div>
 <ul>
 <li>Android SDK: <a href="https://developer.android.google.cn/studio?hl=zh-cn" rel="nofollow">Android Studio</a></li>
 </ul>
-<blockquote>
-<p>Android Studio在进行安装时需要连接外网<br>
-在安装完成后将platform-tools路径添加到系统环境变量<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/94b09b19-cc36-4595-b44c-f70f3500086b"><img src="https://github.com/user-attachments/assets/94b09b19-cc36-4595-b44c-f70f3500086b" alt="Snipaste_2024-10-24_16-57-25" style="max-width: 100%;"></a><br>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>Android Studio在进行安装时需要连接外网</p>
+</div>
+<p>在安装完成后将platform-tools路径添加到系统环境变量<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a28e9e1b-630b-4219-83a2-27efaa5c8bf4"><img src="https://github.com/user-attachments/assets/a28e9e1b-630b-4219-83a2-27efaa5c8bf4" alt="image" style="max-width: 100%;"></a><br>
 在命令行中输入adb进行测试<br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1f4634dc-c47f-4a4d-9886-46625d8e59f0"><img src="https://github.com/user-attachments/assets/1f4634dc-c47f-4a4d-9886-46625d8e59f0" alt="Snipaste_2024-10-24_16-56-00" style="max-width: 100%;"></a></p>
-</blockquote>
 <ul>
-<li>模拟器: <a href="https://www.genymotion.com/product-desktop/download/" rel="nofollow">genymotion</a></li>
-</ul>
-<blockquote>
-<p>选择VirtualBox和genymotion<br>
+<li>模拟器: <a href="https://www.genymotion.com/product-desktop/download/" rel="nofollow">genymotion</a><br>
+选择VirtualBox和genymotion<br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/51f3d735-fa72-4788-bf58-61c80d5a5842"><img src="https://github.com/user-attachments/assets/51f3d735-fa72-4788-bf58-61c80d5a5842" alt="image" style="max-width: 100%;"></a><br>
 配置虚拟机<br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b1037360-ae7a-4dbc-b696-0713b91724f6"><img src="https://github.com/user-attachments/assets/b1037360-ae7a-4dbc-b696-0713b91724f6" alt="image" style="max-width: 100%;"></a><br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b1d7f7b0-116a-44fd-b15b-a249154e318a"><img src="https://github.com/user-attachments/assets/b1d7f7b0-116a-44fd-b15b-a249154e318a" alt="image" style="max-width: 100%;"></a><br>
 启动虚拟机后，可以在adb中看到该虚拟机<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/737224ea-2fb5-4a3e-8f92-0cbdacd8adb5"><img src="https://github.com/user-attachments/assets/737224ea-2fb5-4a3e-8f92-0cbdacd8adb5" alt="image" style="max-width: 100%;"></a></p>
-</blockquote>
-<ul>
-<li>测试工具: <a href="https://github.com/honeynet/droidbot">droidbot</a></li>
-</ul>
-<blockquote>
-<p>克隆仓库<code class="notranslate">git clone https://github.com/honeynet/droidbot.git</code><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/737224ea-2fb5-4a3e-8f92-0cbdacd8adb5"><img src="https://github.com/user-attachments/assets/737224ea-2fb5-4a3e-8f92-0cbdacd8adb5" alt="image" style="max-width: 100%;"></a></li>
+<li>测试工具: <a href="https://github.com/honeynet/droidbot">droidbot</a><br>
+克隆仓库<code class="notranslate">git clone https://github.com/honeynet/droidbot.git</code><br>
 打开<code class="notranslate">setup.py</code>，将<code class="notranslate">androguard&gt;=3.4.0a1</code>修改为<code class="notranslate">androguard==3.4.0a1</code><br>
 在项目文件夹打开终端，输入<code class="notranslate">pip install -e .</code>安装droidbot<br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/95fe5dde-48a8-4d49-8404-22937396ae44"><img src="https://github.com/user-attachments/assets/95fe5dde-48a8-4d49-8404-22937396ae44" alt="image" style="max-width: 100%;"></a><br>
 安装完成后，输入<code class="notranslate">droidbot -h</code><br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/3fdaaa85-7d08-46d9-9b07-f6246daf321f"><img src="https://github.com/user-attachments/assets/3fdaaa85-7d08-46d9-9b07-f6246daf321f" alt="image" style="max-width: 100%;"></a></p>
-</blockquote>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/3fdaaa85-7d08-46d9-9b07-f6246daf321f"><img src="https://github.com/user-attachments/assets/3fdaaa85-7d08-46d9-9b07-f6246daf321f" alt="image" style="max-width: 100%;"></a></li>
+</ul>
 <h2>开始测试</h2>
 <p>输入指令<code class="notranslate">droidbot -a &lt;path_to_apk&gt; -o output_dir</code>开始测试<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5fbad47f-2428-4d66-8aef-e83f53e396cc"><img src="https://github.com/user-attachments/assets/5fbad47f-2428-4d66-8aef-e83f53e396cc" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/bcfdea3e-35e4-4f31-99fb-4132bcdc5033"><img src="https://github.com/user-attachments/assets/bcfdea3e-35e4-4f31-99fb-4132bcdc5033" alt="image" style="max-width: 100%;"></a><br>
 在测试一段时间后，打开输出文件夹中的报告<br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/98031987-ba71-4914-9c31-92e624e03916"><img src="https://github.com/user-attachments/assets/98031987-ba71-4914-9c31-92e624e03916" alt="image" style="max-width: 100%;"></a><br>
 点击节点或边可以看到相应的信息<br>
