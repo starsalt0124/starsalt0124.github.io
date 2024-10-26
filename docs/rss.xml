@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Starsalt's Blog</title><link>https://starsalt0124.github.io</link><description>stay hungry, stay foolish</description><copyright>Starsalt's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/125791539?s=400&amp;u=8ee725c02224f8d28f9711eb4a9a25ebc460d7e6&amp;v=4</url><title>avatar</title><link>https://starsalt0124.github.io</link></image><lastBuildDate>Fri, 25 Oct 2024 13:03:50 +0000</lastBuildDate><managingEditor>Starsalt's Blog</managingEditor><ttl>60</ttl><webMaster>Starsalt's Blog</webMaster><item><title>App静态分析实验</title><link>https://starsalt0124.github.io/post/App-jing-tai-fen-xi-shi-yan.html</link><description># App静态分析实验&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Starsalt's Blog</title><link>https://starsalt0124.github.io</link><description>stay hungry, stay foolish</description><copyright>Starsalt's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/125791539?s=400&amp;u=8ee725c02224f8d28f9711eb4a9a25ebc460d7e6&amp;v=4</url><title>avatar</title><link>https://starsalt0124.github.io</link></image><lastBuildDate>Sat, 26 Oct 2024 08:29:35 +0000</lastBuildDate><managingEditor>Starsalt's Blog</managingEditor><ttl>60</ttl><webMaster>Starsalt's Blog</webMaster><item><title>App静态分析实验</title><link>https://starsalt0124.github.io/post/App-jing-tai-fen-xi-shi-yan.html</link><description># App静态分析实验&#13;
 &#13;
 ## 创建具有soot依赖的项目&#13;
 创建新项目，选择Maven作为构建系统&#13;
@@ -75,12 +75,21 @@ git clone https://github.com/Sable/android-platforms.git&#13;
 安装完成后，输入`droidbot -h`&#13;
 ![image](https://github.com/user-attachments/assets/3fdaaa85-7d08-46d9-9b07-f6246daf321f)&#13;
 &#13;
-## 开始测试&#13;
+## 测试 - droidbotdemo.apk&#13;
 输入指令`droidbot -a &lt;path_to_apk&gt; -o output_dir`开始测试&#13;
 ![image](https://github.com/user-attachments/assets/bcfdea3e-35e4-4f31-99fb-4132bcdc5033)&#13;
 在测试一段时间后，打开输出文件夹中的报告&#13;
 ![image](https://github.com/user-attachments/assets/98031987-ba71-4914-9c31-92e624e03916)&#13;
 点击节点或边可以看到相应的信息&#13;
 ![image](https://github.com/user-attachments/assets/576ebd39-69d4-4a5f-9d14-bf88d49ec34f)&#13;
+&#13;
+## 测试 - F-Droid : Nex Notes&#13;
+&#13;
+从开源app网站F-Droid下载软件进行测试，这里选择了[Nex Notes](https://f-droid.org/zh_Hans/packages/com.swatian.nexnotes/)——一个记录日志的软件&#13;
+![image](https://github.com/user-attachments/assets/977dffbb-aedb-46b3-8146-8163af297f89)&#13;
+使用droidbot进行测试&#13;
+![image](https://github.com/user-attachments/assets/87c6fa1d-6943-4dc5-809a-e46351a3c2d9)&#13;
+可以发现droidbot的测试速度还是比较慢的，且默认使用的算法UtgGreedySearchPolicy在事件的选择上很少为“最优解”，经常在两个节点之间跳来跳去，但胜在通用性强，操作类似于正常使用&#13;
+![image](https://github.com/user-attachments/assets/553e79ef-1a15-4f98-956c-a58843252abe)&#13;
 &#13;
 。</description><guid isPermaLink="true">https://starsalt0124.github.io/post/App-dong-tai-ce-shi-shi-yan.html</guid><pubDate>Thu, 24 Oct 2024 09:12:33 +0000</pubDate></item></channel></rss>

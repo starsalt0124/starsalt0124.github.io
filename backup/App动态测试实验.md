@@ -30,11 +30,20 @@
 安装完成后，输入`droidbot -h`
 ![image](https://github.com/user-attachments/assets/3fdaaa85-7d08-46d9-9b07-f6246daf321f)
 
-## 开始测试
+## 测试 - droidbotdemo.apk
 输入指令`droidbot -a <path_to_apk> -o output_dir`开始测试
 ![image](https://github.com/user-attachments/assets/bcfdea3e-35e4-4f31-99fb-4132bcdc5033)
 在测试一段时间后，打开输出文件夹中的报告
 ![image](https://github.com/user-attachments/assets/98031987-ba71-4914-9c31-92e624e03916)
 点击节点或边可以看到相应的信息
 ![image](https://github.com/user-attachments/assets/576ebd39-69d4-4a5f-9d14-bf88d49ec34f)
+
+## 测试 - F-Droid : Nex Notes
+
+从开源app网站F-Droid下载软件进行测试，这里选择了[Nex Notes](https://f-droid.org/zh_Hans/packages/com.swatian.nexnotes/)——一个记录日志的软件
+![image](https://github.com/user-attachments/assets/977dffbb-aedb-46b3-8146-8163af297f89)
+使用droidbot进行测试
+![image](https://github.com/user-attachments/assets/87c6fa1d-6943-4dc5-809a-e46351a3c2d9)
+可以发现droidbot的测试速度还是比较慢的，且默认使用的算法UtgGreedySearchPolicy在事件的选择上很少为“最优解”，经常在两个节点之间跳来跳去，但胜在通用性强，操作类似于正常使用
+![image](https://github.com/user-attachments/assets/553e79ef-1a15-4f98-956c-a58843252abe)
 
