@@ -85,8 +85,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><p>本次实验是课程的最后一次实验，需要在指针分析的基础上，完成污点分析。</p>
 <p>污点分析建立于指针分析的基础上，关注了某些特殊函数/方法<code class="notranslate">source</code>所产生的污点数据<code class="notranslate">taints</code>跟随变量/指针流入到敏感函数<code class="notranslate">sink</code>的流动过程<code class="notranslate">taintflow</code>。</p>
-<p>在常规的指针分析中，函数调用并不会产生新的<code class="notranslate">obj</code>，但是在污点分析中，对于<code class="notranslate">source</code>方法的调用会产生新的<code class="notranslate">obj</code>作为污点，并对其进行传播。</p>
-<p>这些污点数据在产生后，除了常规的对象传播，还需要考虑包括基于<code class="notranslate">invoke</code>语句的传播</p>
+<p>在具体的实现过程中，污点分析将<code class="notranslate">taints</code>视作一个虚拟的<code class="notranslate">obj</code>，遵循一般的对象传播规则，但也有例外的情况：</p>
+<ul>
+<li>在常规的指针分析中，函数调用并不会产生新的<code class="notranslate">obj</code>，但是在污点分析中，对于<code class="notranslate">source</code>方法的调用会产生新的<code class="notranslate">obj</code>作为污点，并对其进行传播。</li>
+<li>在对象传播过程中，不需要将代表<code class="notranslate">taint</code>的对象作为<code class="notranslate">recv</code>处理，因为它是虚拟出来的，在程序实际执行过程中不会存在这个对象。</li>
+<li>这些污点数据在产生后，还需要考虑包括基于<code class="notranslate">invoke</code>语句的传播</li>
+</ul>
 <p>下面是具体的实现方法</p>
 <p>首先在处理静态<code class="notranslate">invoke</code>语句时，判断调用的函数是否为<code class="notranslate">source</code>函数，如果是就创建<code class="notranslate">taint</code>，并传递给对应的变量</p>
 <div class="highlight highlight-source-java"><pre class="notranslate"><span class="pl-k">public</span> <span class="pl-smi">Void</span> <span class="pl-s1">visit</span>(<span class="pl-smi">Invoke</span> <span class="pl-s1">stmt</span>) {
