@@ -93,7 +93,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ul>
 <p>下面是具体的实现方法</p>
 <p>首先在处理静态<code class="notranslate">invoke</code>语句时，判断调用的函数是否为<code class="notranslate">source</code>函数，如果是就创建<code class="notranslate">taint</code>，并传递给对应的变量</p>
-<div class="highlight highlight-source-java"><pre class="notranslate"><span class="pl-k">public</span> <span class="pl-smi">Void</span> <span class="pl-s1">visit</span>(<span class="pl-smi">Invoke</span> <span class="pl-s1">stmt</span>) {
+<div class="highlight highlight-source-java"><pre class="notranslate"><span class="pl-k">public</span> <span class="pl-smi">Void</span> <span class="pl-en">visit</span>(<span class="pl-smi">Invoke</span> <span class="pl-s1">stmt</span>) {
             <span class="pl-k">if</span> (<span class="pl-s1">stmt</span>.<span class="pl-en">isStatic</span>()) {
                 <span class="pl-k">if</span> (<span class="pl-s1">callGraph</span>.<span class="pl-en">addEdge</span>(<span class="pl-s1">e</span>)) {
                     .....
